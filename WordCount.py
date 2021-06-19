@@ -10,6 +10,6 @@
 
 String = input("Say Something: ")
 
-output = len(String.split())
+output = len(String.strip())
 
 print(f"Your word count is: {output}")
