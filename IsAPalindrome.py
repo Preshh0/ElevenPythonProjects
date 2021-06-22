@@ -1,6 +1,8 @@
-Sentence = input("Enter a word: ")
+Sentence = [input("Enter a word: ")]
+res = [i[:: -1] for i in Sentence]
 
-if str(Sentence) == str(Sentence.reverse()):
-    print("It is a palindrome.")
+if Sentence == res:
+    print(f"{Sentence} is a palindrome.")    
+
 else:
-    print("Not a palindrome.")
+    print(f"{Sentence} is a palindrome.")
