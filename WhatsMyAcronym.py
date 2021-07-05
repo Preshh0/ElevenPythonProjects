@@ -4,32 +4,21 @@
 # Input -> World Health Organization. Output -> WHO.
 # Input -> Absent Without Leave. Output -> AWOL.
 
-# string = " Hello, World! "
-# print(string.replace("Hello", "Hi"))
-# print(string.strip(" ")) #removes the stuff in the quote
-# # if "n" != string:
-# #     print("Not available")
-# # elif "n" in string:
-# #     print("AVailable!")
-# print(string.split("l")) #the stuff in the quotes indicates where it should cut from. NB: The whitespace is important!
-# # print(string1)\
+# Name = [input("Please input name: ")]
+# trial = list(map(lambda x: x[0], ["red", "green", "blue"]))
 
-# name = "Hello World"
-# name.split(" ")
-# for i in name:
-#     for j in name:
-#         print(name[1])
-#     print(name[0])
+# ======> The four lines of code below work. Major win!!!! <======
+firstname = input("Please input first name: ")
+lastname = input("Please input last name: ")
+# middlename = input("Please input middle name :")
+name = list(map(lambda x: x[0], [firstname, lastname]))
 
-value = input("Input a value: ")
- 
+# name = list(map(lambda x: x[0], [input("Your name please: ")]))
+print("Your initials are: " + ".".join(name).title()) #the title function capitalizes the first letter of each word.
 
-if type(value) == str:
-    print("It is a string.")
-if type(value) == int:
-    if value is range (0,99):
-        print("It is an integer.")
-if type(value) == bool:
-    print("It is a boolean.")
-if type(value) == list:
-    print("It is a list.")
+
+# string = input("What word do you need the acronym for? Input here: ")
+# word = string.split(" ")
+# output = list(map(lambda x: x[0], [word]))
+# print(output)
+# # print( '.'.join(output))
