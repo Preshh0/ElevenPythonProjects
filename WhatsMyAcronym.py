@@ -4,16 +4,15 @@
 # Input -> World Health Organization. Output -> WHO.
 # Input -> Absent Without Leave. Output -> AWOL.
 
+# Example code:
+
 # Name = [input("Please input name: ")]
 # trial = list(map(lambda x: x[0], ["red", "green", "blue"]))
 
 # ======> The four lines of code below work. Major win!!!! <======
 firstname = input("Please input first name: ")
 lastname = input("Please input last name: ")
-# middlename = input("Please input middle name :")
 name = list(map(lambda x: x[0], [firstname, lastname]))
-
-# name = list(map(lambda x: x[0], [input("Your name please: ")]))
 print("Your initials are: " + ".".join(name).title()) #the title function capitalizes the first letter of each word.
 
 
@@ -22,3 +21,12 @@ print("Your initials are: " + ".".join(name).title()) #the title function capita
 # output = list(map(lambda x: x[0], [word]))
 # print(output)
 # # print( '.'.join(output))
+
+# ====> code from the web:
+text = input('Enter a string: ')
+#index of first space
+space1 = text.find(' ')
+#index of second space
+space2 = text.find(' ',space1+1)
+newtext = text[0] +'. '  + text[space1+1] +'. ' + text[space2+1] +'.'
+print('New string:', newtext.title())
